@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    }
+    body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    }
+
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 150px;
+    }
+    
+    .nav-links{
+        flex: 1;
+        text-align: right ;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    .nav-links ul li a{
+        color: #333;
+        text-decoration: none;
+        font-size: 20px;
+        }
+    .nav-links ul li::after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background: #007bff;
+            display: block;
+            margin:auto;
+            transition: 0.5s;
+        }
+        
+        .nav-links ul li:hover::after{
+            width:100%;
+            display:block;
+        }
+       /*
+        .hero {
+            background-image: url('Images/IIT.jpg');
+            background-size: cover; /* Ensures the background image covers the entire element
+            background-position: center; /* Centers the background image 
+            background-repeat: no-repeat; /* Prevents the background image from repeating 
+            color: white;
+            text-align: center;
+            padding: 150px 20px; /* Increase top and bottom padding to create more space 
+            height: 500px; /* Increase the height of the .hero section 
+        }*/
+        
+        .features {
+            margin-top: 100px; /* Increase the margin-top to move the content lower */
+        }
+        
+        
+    .hero h1 {
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    }
+    .buttons {
+    margin-top: 20px;
+    }
+    .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    }
+    .btn-primary {
+    background: #ff7b29;
+    }
+    .btn-secondary {
+    background: #333;
+    margin-left: 10px;
+    }
+    .btn-primary:hover {
+    background: #ff5722;
+    }
+    .btn-secondary:hover {
+    background: #555;
+    }
+    .features {
+    text-align: center;
+    padding: 50px 20px;
+    }
+    .features h2 {
+    margin-bottom: 2rem;
+    }
+    .feature-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    }
+    .feature {
+    width: 20%;
+    padding: 15px;
+    }
+    .feature .icon {
+    margin-bottom: 1rem;
+    }
+    .feature .icon img {
+    width: 50px;
+    height: auto;
+    }
+    @media (max-width: 768px) {
+    .feature {
+    width: 45%;
+    }
+    }
+    @media (max-width: 480px) {
+    .feature {
+    width: 100%;
+    }
+    }
+
+    .dropdown-menu {
+        display: none;
+        position: absolute;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        padding: 10px;
+        list-style: none; /* Remove default list styling */
+    }
+    
+    .dropdown-menu li {
+        display: table;
+        width: 100%;
+    }
+    
+    .dropdown-menu li a {
+        display: table-row;
+        padding: 5px 10px;
+        text-decoration: none; /* Remove underline from links */
+        color: #000; /* Change link color */
+        font-size: 1px;
+    }
+    
+    .dropdown-menu li a:hover {
+        background-color: #f0f0f0;
+    }
+    .footer-basic-centered {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 3rem;
+        margin-top: auto; /* Ensures footer stays at bottom */
+        border-top: 2px solid black; /* Adds a black top border */
+    }
+    .footer-links {
+        margin: 0.5rem 0;
+    }
+    
+    /* Existing styles... */
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000; /* Ensure nav is above the slider */
+    position: relative; /* To handle z-index properly */
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    list-style: none; /* Remove default list styling */
+    z-index: 2000; /* Ensure dropdown is above the slider */
+    left: 0;
+    list-style: none;
+    
+}
+
+.dropdown-menu li {
+    display: table;
+    width: 100%;
+}
+
+.dropdown-menu li a {
+    display: table-row;
+    padding: 5px 10px;
+    text-decoration: none; /* Remove underline from links */
+    color: #000; /* Change link color */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Other existing styles... */
+
+    
+
+    

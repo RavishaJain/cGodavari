@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Page</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="slider.css">
+<style>
+    .logo {
+        width: 300px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+</style>
+</head>
+<body>
+<section class="header">
+<nav>
+<a href="index.html"><img src="Images/logo.png" alt="Logo" class="logo"></a>
+<div class="nav-links">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="about.html" id="aboutUsLink">About</a></li>
+<li><a href="publications.html">Publications</a></li>
+<li><a href="#" id="Event">Events</a>
+    <ul class="dropdown-menu" id="EventDropdown">
+        <li><a href="MoASign.html">MoA Signing</a></li>
+        <li><a href="workshop.html">Initiation Workshop at IIT Hyderabad</a></li>
+        <li><a href="otherevents.html">Others</a></li>
+    </ul>
+</li>
+<script>
+    document.getElementById("Event").addEventListener("click", function(event) {
+        event.preventDefault();
+        var dropdown = document.getElementById("EventDropdown");
+        dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
+    });
+</script>
+<li><a href="openposition.html">Open Position</a></li>
+</ul>
+</div>
+</nav>
+<div class="hero">
+    <div class="slider" id="slider">
+        <div class="slide">
+            <img src="Images/image1.JPG" alt="Slide 1">
+            <div class="description">MoA Signature by Prof. B.S. Murty </div>
+        </div>
+        <div class="slide">
+            <img src="Images/image2.JPG" alt="Slide 2">
+            <div class="description">MoA Signing and Initiation Workshop of CAMP for 6 River Basin held at DAIC, New Delhi; February 28, 2024</div>
+        </div>
+        <div class="slide">
+            <img src="Images/image3.jpeg" alt="Slide 3">
+            <div class="description">MoA Signing and Initiation Workshop of CAMP for 6 River Basin held at DAIC, New Delhi; February 28, 2024</div>
+        </div>
+        <div class="slide">
+            <img src="Images/image4.jpeg" alt="Slide 4">
+            <div class="description">Initiation Workshop IIT Hyderabad</div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="features">
+<h2>For Further Information</h2>
+<div class="feature-container">
+<div class="feature">
+<div class="icon"><img src="Images/social.png" alt="Social Media"></div>
+<h3>Social Media</h3>
+</div>
+<div class="feature">
+<div class="icon"><img src="Images/contact.png" alt="Contacts"></div>
+<h3>Contacts</h3>
+</div>
+<div class="feature">
+<div class="icon"><img src="Images/link.png" alt="Links"></div>
+<h3>Links</h3>
+</div>
+</div>
+</section>
+<script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const totalSlides = slides.length;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.style.opacity = i === index ? '1' : '0';
+        });
+    }
+
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+    setInterval(nextSlide, 5000);
+</script>
+<footer class="footer-basic-centered">
+    <p class="footer-links">
+        <!-- Footer content -->
+    </p>
+</footer>
+</body>
+</html>

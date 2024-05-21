@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>One Page</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .logo {
+        width: 300px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+    }
+    .openpos {
+        text-align: center;
+        color: #007bff;
+        font-size: 2rem; /* Adjusted to a large but more reasonable size */
+        font-family: 'Arial', sans-serif;
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+        margin-top: 1rem;
+        margin-bottom: 5rem; /* Added margin-bottom to create more space */
+    }
+    .nav-links {
+        text-align: center;
+    }
+    .nav-links p {
+        margin-top: 1rem; /* Adjust this value to position it lower if needed */
+        font-size: 1.5rem; /* Adjust the font size as needed */
+        margin-bottom: 7rem;
+    }
+    .images-section {
+        display: flex;
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images horizontally */
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+    .images-section img {
+        width: 50%; /* Set a common width for all images */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #ddd;
+        border-radius: 8px;
+    }
+    .footer-basic-centered {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 3rem;
+        margin-top: auto; /* Ensures footer stays at bottom */
+        border-top: 2px solid black; /* Adds a black top border */
+    }
+    .footer-links {
+        margin: 0.5rem 0;
+    }
+</style>
+</head>
+<body>
+<section class="header">
+<nav>
+<a href="index.html"><img src="Images/logo.png" alt="Logo" class="logo"></a>
+</nav>
+<div class="nav-links">
+<h1 class="openpos">Initiation Workshop IIT Hyderabad, NRCD Condition Assessment & Management Plan (CAMP) Godavari River Basin, March 24 2024
+</h1>
+<p></p>
+</div>
+</section>
+<section class="images-section">
+    <img src="Images/image5.jpeg" alt="Image 4">
+    <img src="Images/image6.jpg" alt="Image 6">
+    <img src="Images/image7.jpeg" alt="Image 7">
+</section>
+
+<footer class="footer-basic-centered">
+   <p class="footer-links">
+       <!-- Footer content -->
+   </p>
+</footer>
+</body>
+</html>
